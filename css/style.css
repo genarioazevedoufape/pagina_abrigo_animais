@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    border:1px solid red;
+    /* border:1px solid red; */
     font-family: 'Poppins';
 
 }
@@ -313,8 +313,8 @@ button {
 
 /* section 4 */
 .information-section {
-    padding-top: 50px;
-    padding-bottom: 88px;
+    padding-top: 40px;
+    /* padding-bottom: 48px; */
     margin-left: 140px;
     margin-right: 140px;
 }
@@ -341,7 +341,7 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    font-size: 45px;
+    font-size: 50px;
     text-align: center;
 
 }
@@ -349,51 +349,56 @@ button {
 .information-area {
     display: flex;
     align-items: center;
-    
+    margin-top: 40px;
+   
 }
 
 .information-image {
     width: 50%;
-    margin-top: 55px;
+    margin-bottom: -60px
+
+}
+.information-image img {
     position: relative;
     flex: 1;
 }
 
 .information-image #cat {
-    z-index: 1;
-    /* left: 300px;  */
-    width: 32%;
+    z-index: 4;
+    top: 10px;
+    width: 40%;
+    right: 75px;
     
 }
 
 .information-image #dog {
-    z-index: 2;
-    /* top: 10px;
-    right: 110px; */
-    width: 48%;
-       
+    width: 56%;
+    z-index: 1;
+    top: 10px;
+    left: 100px;
 }
 
 .information-image #bone-icon {
     z-index: 3;
-    /* left: 170px;
-    bottom: 520px;    */
+    left: 35px;
+    bottom: 545px;   
     width: 19%
     
  
 }
 .information-image #collar {
-    z-index: 4;
-    left: 300px;
-    bottom: 250px;
-    width: 24%;
+    z-index: 3;
+    transform: scaleX(-1);
+    left:25px;
+    bottom: 280px;
+    width: 28%;
 
 }
 
 .information-text {
     width: 50%;
-    padding-left: 20px;
-    margin-top: 20px;
+    padding-left: 40px;
+    padding-bottom: 80px;
 }
 
 .information-text h4 {
@@ -405,4 +410,98 @@ button {
     font-size: 20px;
     color: #37383F;
     padding: 10px
+}
+
+/* section 5 */
+.cards-section-two {
+    width: 100%;
+    background-color: #1E1F27 ;
+    color: #ffffff; 
+    padding-top: 60px;
+    padding-bottom: 80px;
+}
+.cards-section-two-title {
+    margin-left: 140px;
+    margin-right: 140px;
+    display: flex;
+    justify-content: center;
+}
+.cards-section-two-title > span {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+  .cards-section-two-title h2 {
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    line-height: 1.2;
+}
+
+.cards-section-two-card {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 50px;
+}
+.cards-section-two-card-area {
+    border: 2px solid #FFFFFF;
+    width: 200px;
+    height: 270px;
+    border-radius: 24px;
+    padding-top: 36px;
+    padding-right: 30px;
+    padding-left: 30px;
+
+}
+.cards-section-two-card-area h4 {
+    font-size: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+}
+.cards-section-two-card-area > p {
+    font-size: 16px;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.cards-section-two-card-area-botton  {
+    display: block;
+    width: 180px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 16px;
+    padding: 10px;
+    margin-top: 30px;
+}
+.cards-section-two-card-area-botton p {
+    font-size: 18px;
+}
+
+#green {
+    background-color: #04C27F;
+    color: #1E1F27;
+    text-align: center;
+}
+#yellow {
+    background-color:#F1D06E;
+    color: #1E1F27;
+    text-align: center;
+}
+#pink {
+   background-color: #FF3D9A;
+   color: #FFFFFF;
+   text-align: center;
+}
+#purple {
+    background-color: #5758F1;
+    color: #FFFFFF;
+    text-align: center;
 }
