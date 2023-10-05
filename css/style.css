@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
-    /* border: 1px solid red; */
+    /* border:1px solid red; */
     font-family: 'Poppins';
-}
 
+}
 
 .container {
     width: 100%;
@@ -14,11 +14,11 @@
 
 .menu {
     display: flex;
-    justify-content: start;
+    justify-content: space-between;
     align-items: center;
     font-family: 'Inter';
     font-size: 20px;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-left: 140px;
     padding-right: 140px;
     color: #1E1F27;
@@ -27,14 +27,6 @@
 .menu .contact img {
     width: 30px;
     height: 30px;
-}
-
-
-section {
-    border-top: 2px solid #1E1F27 ;
-    margin-top: 25px;
-    margin-left: 140px;
-    margin-right: 140px;
 }
 
 .button_donate {
@@ -90,8 +82,8 @@ section {
 }
 
 h1 {
-    font-size: 55px ;
-    font-weight: 700px;
+    font-size: 55px;
+    font-weight: 700;
     margin-bottom: 30px;
     line-height: 1.0;
 }
@@ -130,21 +122,26 @@ li {
 
 .about {
     display: flex;
-    margin-top: 40px;
+    margin-top: 30px;
+    padding-top: 20px;
+    border-top: 2px solid #1E1F27 ;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 0px;
 }
 .about-text {
     font-size: 24px;
-    margin-top: 50px;
+    margin-top: 80px;
     width: 100%;
 }
 
 .about-text h3 {
-    margin-top: 50px;
+    margin-top: 30px;
     font-size: 32px;
     color: #1E1F27;
 }
 
-footer {
+.group-bottons {
     margin-top: 40px;
     display: flex;
     gap: 40px;
@@ -162,33 +159,164 @@ section .img-container img {
 section .img-container #cat {
     z-index: 1;
     left: 300px; 
-    width: 321px;
-    height: 566px;
+    width: 52%;
     
 }
 
 section .img-container #dog {
     z-index: 2;
-    bottom: 08px;
+    top: 10px;
     right: 110px;
-    width: 212px;
+    width: 34%;
        
 }
 
 section .img-container #house {
     z-index: 3;
-    left: 190px;
-    bottom: 550px;   
-    width: 104.57px;
-    height: 192.57px;
+    left: 170px;
+    bottom: 520px;   
+    width: 19%
     
  
 }
 section .img-container #collar {
     z-index: 4;
-    left: 315px;
-    bottom: 280px;
-    width: 141px;
-    height: 96px;
+    left: 300px;
+    bottom: 250px;
+    width: 24%
+
+}
+/* section 2 */
+
+.carousel-section {
+    width: 100%;
+    background-color: #1E1F27 ;
+    color: #ffffff; 
+    padding-top: 50px;
+}
+.carousel-section .text-section {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 40px;
+   
 }
 
+.carousel-section .text-section .date {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-section .text-section h2 {
+    font-size: 45px;
+    text-align: center;
+    margin-left: 440px;
+    margin-right: 440px;
+}
+.carousel-section .text-section .date  h3 {
+    color: #F8DB46 ;
+    font-size: 55px;
+    width: 100%;
+    margin-right: 130px;
+    margin-top: 70px;
+}
+.carousel-section .text-section .date  p {
+    font-size: 32px;
+    margin-top: 10px;
+}
+
+/* carousel */
+
+.carousel-container {
+
+    margin-top: 60px; 
+    margin-left: 230px;
+    margin-right: 230px;
+    overflow: hidden;
+
+}
+
+.carousel-animals {
+    display: flex;
+    transition: transform 0.5s; /* Adiciona animação de transição para o deslizamento */
+}
+
+.carousel-slide {
+    flex: 0 0 25%; /* 4 imagens visíveis */
+    text-align: center;
+    position: relative;
+}
+.carousel-slide img {
+    width: 85%;
+}
+
+button {
+    margin-top: 10px;
+}
+
+#prev, #next {
+    cursor: pointer;
+}
+
+#dog-2 {
+    /* Defina as dimensões da div para corresponder às dimensões da imagem */
+    width: 250px; /* Largura desejada */
+    height: 250px; /* Altura desejada */
+    background-color: #FF3D9A;
+    border-radius: 120px 120px 120px 120px
+    
+}
+
+/* section 3 */
+.cards-section {
+    width: 100%;
+    background-color: #1E1F27 ;
+    color: #ffffff; 
+    padding-top: 140px;
+}
+
+.cards-section h2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: 40px;
+    text-align: center;
+}
+
+.cards-block {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 8px;
+    padding-bottom: 70px;
+}
+.card {
+    border: 2px solid #FFFFFF;
+    width: 245px;
+    height: 220px;
+    border-radius: 24px;
+    padding: 36px;
+    margin-top: 30px;
+}
+
+.title-card {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title-card h4 {
+    font-size: 35px;
+}
+
+.card p {
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-top: 30px;
+}
+.title-card img {
+    width: 20%;
+}
