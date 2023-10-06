@@ -51,9 +51,6 @@
     vertical-align: middle;
 }
 
-.button_donate {
-    margin-left: 70px;
-}
 .button_adopt {
     display: block;
     width: 280px;
@@ -80,8 +77,8 @@
     vertical-align: middle;
 }
 
-h1 {
-    font-size: 55px;
+.about-text h1 {
+    font-size: 58px;
     font-weight: 700;
     margin-bottom: 30px;
     line-height: 1.0;
@@ -157,7 +154,7 @@ li {
 
 .img-container #cat {
     z-index: 1;
-    left: 300px; 
+    left: 270px; 
     width: 52%;
     
 }
@@ -165,14 +162,14 @@ li {
 .img-container #dog {
     z-index: 2;
     top: 10px;
-    right: 110px;
-    width: 34%;
+    right: 170px;
+    width: 38%;
        
 }
 
 .img-container #house {
     z-index: 3;
-    left: 170px;
+    left: 150px;
     bottom: 520px;   
     width: 19%
     
@@ -180,9 +177,9 @@ li {
 }
 .img-container #collar {
     z-index: 4;
-    left: 300px;
-    bottom: 250px;
-    width: 24%
+    left: 250px;
+    bottom: 220px;
+    width: 28%
 
 }
 /* section 2 */
@@ -671,14 +668,18 @@ button {
 }
 
 /* section footer */
+#footer-section {
+    background-color: #F5F5F5;
+    padding-bottom: 50px;
+}
 
 #footer-section-container {
     margin-left: 140px;
     margin-right: 140px;
     margin-top: 70px;
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Define o número de colunas desejado */
-    gap: 20px; /* Adicione espaçamento conforme necessário */
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 20px; 
 }
 
 #footer-section-container h2 {
@@ -794,3 +795,83 @@ button {
     color: #37383F;
 
 }
+
+/* adotables-pets */
+
+#adotables-pets {
+    padding-top: 70px;
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex;
+    flex-direction: column; /* Alinha os elementos verticalmente */
+    align-items: center; /* Centraliza verticalmente os elementos filhos */
+ }
+
+#adotables-pets-container {
+    margin-top: 30px;
+    background-color: #1E1F27;
+}
+
+
+ .adotables-pets-container-group {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 70px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+  
+}
+
+#adotables-pets h2 {
+    justify-content: center;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin-bottom: 50px
+
+}
+
+.adotables-pets-container-group h4 {
+    font-size: 28px;
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.adotables-pets-button {
+    width: 155px;
+    height: 35px;
+    cursor: pointer;
+    background-color:  #FF3D9A;
+    border: 2px solid #FF3D9A;
+    color: white;
+    border-radius: 32px;
+    padding: 10px;   
+    margin-bottom: 50px;
+}
+
+.adotables-pets-button img {
+    float: left;
+  }
+  
+.adotables-pets-button p {
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+}
+#adotables-pets {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.adotables-pets-container-group-elements {
+        text-align: center; /* Centraliza o texto horizontalmente */
+        display: flex;
+        flex-direction: column; /* Alinha os elementos verticalmente */
+        align-items: center; /* Centraliza verticalmente os elementos filhos */
+}
+      
+
