@@ -432,7 +432,7 @@ button {
     justify-content: space-between;
 }
 
-  .cards-section-two-title h2 {
+.cards-section-two-title h2 {
     width: 50%;
     display: flex;
     flex-direction: row;
@@ -504,4 +504,88 @@ button {
     background-color: #5758F1;
     color: #FFFFFF;
     text-align: center;
+}
+
+/* section 6 */
+
+#section-adorable-adoptables {
+    height: 382px;
+    background-color: #1E1F27;
+    color: white;
+    padding-top: 80px;
+}
+
+#section-adorable-adoptables-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 110px;
+    margin-right: 110px;
+ 
+}
+.section-adorable-adoptables-container-img {
+    position: relative;
+    top: 70px;
+}
+#section-adorable-adoptables-container-title {
+    width: 100%;
+}
+#section-adorable-adoptables-container-title h2{
+    justify-content: center;
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    position: relative;
+    bottom: 100px;
+}
+#fish {
+   position: relative;
+   bottom: 45px;
+   right: 170px
+}
+#bone {
+    position: relative;
+    bottom: 40px;
+    left: 590px
+}
+#destact-text {
+     color: #F8DB46;
+}
+
+#section-adorable-adoptables-container-title h4 {
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 25px;
+    position: relative;
+    bottom: 60px;
+}
+.section-adorable-adoptables-container-botton  {
+    display: flex;
+    width: 180px;
+    height: 35px;
+    cursor: pointer;
+    border-radius: 32px;
+    padding: 10px;
+    margin-top: 30px;
+    justify-content: center;
+}
+
+#section-adorable-adoptables-container-botton {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    position: relative;
+    bottom: 45px;    
+}
+
+.section-adorable-adoptables-container-botton p {
+    font-size: 18px;
+}
+
+#black {
+    width: 179px;
+    height: 34px;
+    color: white;
+    border: 1px solid white;
+    border-radius: 32px;
 }
