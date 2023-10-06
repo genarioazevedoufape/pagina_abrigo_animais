@@ -589,3 +589,94 @@ button {
     border: 1px solid white;
     border-radius: 32px;
 }
+
+
+
+/* section 7 */
+
+#subscribe-section {
+    background-color: #5758F1;
+}
+
+#subscribe-section-container{
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+    color: white;
+}
+#subscribe-section-header {
+    /* width: 100%; */
+    display: block;
+    text-align: center;
+}
+#subscribe-section-header h2 {
+    font-size: 57px;
+    text-align: center;
+}
+#subscribe-section-header p {
+    margin-left: 230px;
+    margin-right: 230px;
+    margin-top: 10px;
+    font-size: 19px;
+    font-family: "Inter";    
+}
+#subscribe-section-information {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 60px;
+}
+
+#subscribe-section-information-email  {
+    display: block;
+    width: 395px;
+    height: 32px;
+    border-radius: 32px;
+    /* margin-top: 80px; */
+    border: 2px white solid;
+    padding: 12px;
+    
+}
+#subscribe-section-information-email p {
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: left;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#subscribe-section-information-button {
+    display: block;
+    width: 150px;
+    height: 32px;
+    cursor: pointer;
+    border-radius: 32px;
+    /* margin-top: 80px; */
+    border: 2px white solid;
+    padding: 12px;
+    background-color: #ffffff;
+}
+#subscribe-section-information-button p {
+    font-size: 20px;
+    font-family: "Inter";
+    font-weight: 500;
+    line-height: 32px;
+    letter-spacing: 0px;
+    text-align: center;
+    color: #1E1F27;
+    font-weight: 700;
+}
+
+
+
+
+
+
+
+
+
+
+
