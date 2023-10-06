@@ -3,15 +3,13 @@
     padding: 0;
     /* border:1px solid red; */
     font-family: 'Poppins';
+    font-weight: 700;
 
 }
-
 .container {
     width: 100%;
     background-color:#F5F5F5 ;
-   
 }
-
 .menu {
     display: flex;
     justify-content: space-between;
@@ -670,13 +668,83 @@ button {
     font-weight: 700;
 }
 
+/* section footer */
+
+#footer-section {
 
 
+}
+#footer-section-container {
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Define o número de colunas desejado */
+    gap: 20px; /* Adicione espaçamento conforme necessário */
+}
 
+#footer-section-container h2 {
+    font-size: 46px;
+    text-align: left;
+    white-space: pre-line;
+    line-height: 1.0;
+    color: #1E1F27;
+}
 
+#footer-section-container ul {
+    font-family: "inter";
+    font-size: 20px;
+    line-height: 2.4;
+    list-style: none;
+    color: #1E1F27;
+    padding-top: 10px;
+    padding-left: 15px;
+}
 
+#footer-section-subtitle {
+    font-size: 25px;
+    color: #1E1F27;
+    word-spacing: 4px;
+    margin-top: -25px;
+}
 
+#footer-section-img-heart {
+    position: relative;
+    left: 165px;
+    bottom: 45px;
+}
 
+#footer-section-contact {
+    font-family: "inter";
+    font-size: 20px;
+    color: #1E1F27;
+    margin-top: -15px;
+    padding-left: 15px;
+    
+}
+#footer-section-contact p {
+    margin-left: 40px;
+}
+#footer-section-contact img {
+   position: relative;
+   top: 30px;
+}
+#footer-section-contact-group {
+    display: flex;
+    gap: 30px;
+}
 
-
-
+#footer-section-contact-phrase {
+    margin-top: 60px;
+    margin-left: 140px;
+    margin-right: 140px;
+    margin-bottom: 60px;
+    padding-top: 80px;
+    border-top: #1E1F27 solid 2px;
+    font-size: 28px;
+    text-align: center;
+    color: #1E1F27;
+}
+#footer-section-contact-phrase span {
+    color: #FF3D9A;
+}
