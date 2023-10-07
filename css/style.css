@@ -952,9 +952,9 @@ form {
     margin: 0 auto;
 }
 
-input[type="text"], input[type="email"], input[type="number"] {
+input[type="text"], input[type="email"], input[type="number"] ,imput[type="checkbox"] {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     width: 100%;
     padding: 10px;
     border: 1px solid #3F96FC;
@@ -978,7 +978,6 @@ label span {
 
 }
 
-/* Estilize o subtítulo */
 #adopt-modal-subtitle {
     margin-bottom: 40px;
 }
@@ -989,4 +988,120 @@ label span {
     flex-direction: row;
     justify-content: center;
     gap: 16px;
+}
+
+/* donate-modal */
+
+#donate-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.donate-modal-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#modal-button-donate {
+    width: 330px;
+    height: 60px;
+    background-color: #FF3D9A;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 16px, 32px, 16px, 32px;  
+    gap: 8px;
+    border-radius: 60px;
+    font-size: 30px;
+}
+
+#modal-button-cancel-donate {
+    width: 177px;
+    height: 64px;
+    background-color: #37383F;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 16px, 32px, 16px, 32px;
+    gap: 8px;
+    border-radius: 32px;
+    font-size: 20px;
+
+}
+#modal-button-cancel #modal-button-donate  img {
+    max-width: 100%;
+    height: auto;
+}
+
+#donate-modal-content-title {
+    line-height: 65px;
+    margin-bottom: 40px;
+}
+#donate-modal-content-title h1 {
+    width: 400px;
+    font-size: 56px;
+    text-align: center;
+    color: #1E1F27;
+}
+.method-input-container {
+    width: 105%;
+    display: flex;
+    gap:8px;   
+}
+.method-input-container label {
+    color: #37383F ;
+    border: 1px solid  #3F96FC;
+    width: 170px;
+    height: 30px;
+    padding: 16px;
+    border-radius: 8px;
+}
+#help::placeholder {
+    text-align: right;
+    margin-right: 10px;
+}
+
+.checkbox-circle {
+    display: none; 
+}
+
+.custom-checkbox {
+    display: inline-block;
+    width: 18px; 
+    height: 18px; 
+    border-radius: 50%; 
+    margin-right: 8px; 
+    background-color: #37383F 
+    
+}
+
+.checkbox-label {
+    display: flex;
+    align-items: center;
+    color: #37383F;
+    padding: 10px;
+
+}
+
+.checkbox-label input:checked + .custom-checkbox {
+    background-color: #FF3D9A; 
+}
+
+.checkbox-label input:checked + .custom-checkbox + span {
+    color: #FF3D9A; 
+}
+
+.checkbox-label input:checked + .custom-checkbox {
+    background-color: #FF3D9A;
 }

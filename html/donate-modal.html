@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Poppins:wght@600&amp;display=swap" rel="stylesheet">
+
+    <meta name="charset" content="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forever Homes Shelter</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    
+    <div id="donate-modal">
+    <div class="donate-modal-content">
+        <div id="donate-modal-content-title">
+            <h1>Choose your Donate </h1>
+        </div>
+            <div>
+            <form action="" id="">
+                <label for="email">EMAIL*</label>
+                <input type="email" placeholder="youremail@here|" id="email" name="email">
+
+                <label for="name">HOW MUCH CAN YOU HELP?*</label>
+                <input type="text" placeholder="R$ 95,00" id="help"  name="help" required>
+
+                <label for="method-input-container">PAYMENT METHOD*</label>
+                <div class="method-input-container">
+                    <label for="pix" class="checkbox-label">
+                        <input type="checkbox" id="pix" name="payment_method" value="pix" class="checkbox-circle" required>
+                        <span class="custom-checkbox"></span> Pix
+                    </label>
+                
+                    <label for="credit" class="checkbox-label">
+                        <input type="checkbox" id="credit" name="payment_method" value="credit_card" class="checkbox-circle" required>
+                        <span class="custom-checkbox"></span> Credit Card
+                    </label>
+                
+                    <label for="default" class="checkbox-label">
+                        <input type="checkbox" id="default" name="payment_method" value="default" class="checkbox-circle" required>
+                        <span class="custom-checkbox"></span> Default
+                    </label>
+                </div>          
+            </form>
+            <div class="donate-modal-container-footer">
+                <div id="modal-button-donate">
+                    <img src="/assets/Icon_Coracao.png" alt="">
+                    <p>I wanna Help!</p>
+                </div>
+
+                <div id="modal-button-cancel-donate">
+                    <img src="/assets/icons/Vector (9).png" alt="">
+                    <p>Cancel</p>
+                </div>
+            </div>  
+      </div>
+    </div>
+    <script >
+            const checkboxes = document.querySelectorAll('input[name="payment_method"]');
+
+            // Adiciona um ouvinte de evento para cada checkbox
+            checkboxes.forEach(checkbox => {
+                checkbox.addEventListener('change', () => {
+                    // Desmarca todas as outras checkboxes quando uma é marcada
+                    checkboxes.forEach(otherCheckbox => {
+                        if (otherCheckbox !== checkbox) {
+                            otherCheckbox.checked = false;
+                        }
+                    });
+                });
+            });
+
+    </script>
+</body>
+</html>

@@ -41,3 +41,9 @@ prevButton.addEventListener("click", () => {
 
 
 // Modal
+
+
+// Donate Modal ChackBox 
+
+
+// Obtém todos os elementos de checkbox com name "payment_method"
