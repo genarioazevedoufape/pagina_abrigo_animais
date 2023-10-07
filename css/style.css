@@ -162,21 +162,21 @@ li {
 .img-container #dog {
     z-index: 2;
     top: 10px;
-    right: 170px;
+    right: 180px;
     width: 38%;
        
 }
 
 .img-container #house {
-    z-index: 3;
-    left: 150px;
+    z-index: 1;
+    left: 140px;
     bottom: 520px;   
     width: 19%
     
  
 }
 .img-container #collar {
-    z-index: 4;
+    z-index: 1;
     left: 250px;
     bottom: 220px;
     width: 28%
@@ -800,10 +800,10 @@ button {
 
 #adotables-pets {
     padding-top: 70px;
-    text-align: center; /* Centraliza o texto horizontalmente */
+    text-align: center; 
     display: flex;
-    flex-direction: column; /* Alinha os elementos verticalmente */
-    align-items: center; /* Centraliza verticalmente os elementos filhos */
+    flex-direction: column; 
+    align-items: center; 
  }
 
 #adotables-pets-container {
@@ -868,10 +868,125 @@ button {
     flex-wrap: wrap;
 }
 .adotables-pets-container-group-elements {
-        text-align: center; /* Centraliza o texto horizontalmente */
-        display: flex;
-        flex-direction: column; /* Alinha os elementos verticalmente */
-        align-items: center; /* Centraliza verticalmente os elementos filhos */
+    text-align: center; 
+    display: flex;
+    flex-direction: column; 
+    align-items: center; 
 }
       
+/* adopt-modal */
 
+.adopt-modal-container-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-top: 20px;
+    margin-left: 20px;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+#modal-button-adopt {
+    width: 400px;
+    height: 50px;
+    background-color: #04C27F;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px;   
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+
+#modal-button-cancel {
+    width: 400px;
+    height: 50px;
+    background-color: #37383F;
+    color: #F5F5F5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px;
+    padding: 10px;   
+    gap: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+
+}
+#modal-button-cancel #modal-button-adopt  img {
+    max-width: 100%;
+    height: auto;
+}
+
+#adopt-modal-content-title h1 {
+    font-size: 48px;
+    text-align: center;
+    color: #1E1F27;
+}
+
+#adopt-modal-content-title p{
+    font-size: 18px;
+    text-align: center;
+    color: #1E1F27;
+}
+
+#adopt-modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.adopt-modal-content {
+    text-align: center;
+}
+
+form {
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+input[type="text"], input[type="email"], input[type="number"] {
+    display: block;
+    margin-bottom: 10px;
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #3F96FC;
+    border-radius: 8px;
+    height: 30px;
+    font-size: 16px;
+    color: #37383F;
+}
+
+label {
+    color: #FF3D9A;
+}
+
+label span {
+    color: #37383F;
+}
+
+
+#agree-label {
+    font-size: 14px;
+
+}
+
+/* Estilize o subtítulo */
+#adopt-modal-subtitle {
+    margin-bottom: 40px;
+}
+
+.dob-input-container {
+    width: 420px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 16px;
+}

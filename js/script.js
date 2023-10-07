@@ -38,3 +38,6 @@ prevButton.addEventListener("click", () => {
         }, 500);
     }
 });
+
+
+// Modal
