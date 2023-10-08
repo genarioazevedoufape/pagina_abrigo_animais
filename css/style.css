@@ -1,80 +1,80 @@
 * {
     margin: 0;
     padding: 0;
-    /* border:1px solid red; */
     font-family: 'Poppins';
     font-weight: 700;
 }
-.container {
+
+/* Section-home */
+
+#container-home {
     width: 100%;
     background-color:#F5F5F5 ;
 }
-.menu {
+
+#container-home-menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
     font-family: 'Inter';
     font-size: 20px;
-    padding-top: 30px;
-    padding-left: 140px;
-    padding-right: 140px;
-    padding-bottom: 10px;
+    padding: 30px 140px 10px;
     color: #1E1F27;
-    bottom: #1E1F27 solid 2px;
-    
-}
-.menu .contact img {
-    width: 30px;
-    height: 30px;
+
 }
 
+.contact {
+    display: flex;
+    margin-left: 40px;    
+}
+
+.contact img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px
+}
+
+/* Button-Donate */
 .button_donate {
-    width: 155px;
-    height: 45px;
+    width: 205px;
+    height: 75px;
     cursor: pointer;
     background-color:  #FF3D9A;
     color: white;
     border-radius: 32px;
     padding: 10px 25px;   
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;
+    border: #FF3D9A;
 }
   
 .button_donate img {
     width: 42px;
     height: 42px;
     float: left;
-  }
-  
-.button_donate p {
-    font-size: 25px;
-    text-align: center;
-    line-height: 45px;
-    vertical-align: middle;
 }
 
+/* Button adopt */
 .button_adopt {
     display: block;
     width: 280px;
-    height: 45px;
+    height: 75px;
     cursor: pointer;
     background-color:  white;
     color: #1E1F27;
     border-radius: 32px;
     padding: 10px 25px;
     border: #1E1F27 solid 1px;
-   
-  }
-  
+    font-size: 22px;
+    text-align: center;
+    line-height: 45px;   
+}
+
 .button_adopt img {
     width: 42px;
     height: 42px;
     float: left;
-  }
- 
-.button_adopt p {
-    font-size: 28px;
-    text-align: center;
-    line-height: 45px;
-    vertical-align: middle;
 }
 
 .about-text h1 {
@@ -95,28 +95,17 @@ nav a {
     color: #1E1F27;
 }
 
-#list {
+#container-home-menu-list {
     margin-left: 20px;
     list-style: none;
     display: flex;
 }
 
-li {
+#container-home-menu li {
    margin-right: 15px;
 }
 
-
-.contact {
-    display: flex;
-    margin-left: 40px;    
-}
-.contact img {
-    width: 18px;
-    height: 18px;
-    margin-right: 10px
-}
-
-.about {
+#container-home-menu-about {
     display: flex;
     margin-top: 25px;
     padding-top: 20px;
@@ -125,6 +114,7 @@ li {
     margin-right: 140px;
     margin-bottom: 0px;
 }
+
 .about-text {
     font-size: 24px;
     margin-top: 80px;
@@ -156,15 +146,13 @@ li {
     z-index: 1;
     left: 270px; 
     width: 52%;
-    
 }
 
 .img-container #dog {
     z-index: 2;
     top: 10px;
     right: 180px;
-    width: 38%;
-       
+    width: 38%;    
 }
 
 .img-container #house {
@@ -172,16 +160,14 @@ li {
     left: 140px;
     bottom: 520px;   
     width: 19%
-    
- 
 }
 .img-container #collar {
     z-index: 1;
     left: 250px;
     bottom: 220px;
     width: 28%
-
 }
+
 /* section 2 */
 
 .carousel-section {
@@ -196,7 +182,6 @@ li {
     justify-content: center;
     margin-top: 40px;
 }
-
 
 .carousel-section .text-section .date {
     display: flex;
@@ -229,7 +214,6 @@ li {
     margin-left: 230px;
     margin-right: 230px;
     overflow: hidden;
-
 }
 
 .carousel-animals {
@@ -261,7 +245,9 @@ li {
     position: relative;
     top: 200px;
 }
+
 /* section 3 */
+
 .cards-section {
     width: 100%;
     background-color: #1E1F27 ;
@@ -315,9 +301,9 @@ li {
 }
 
 /* section 4 */
+
 .information-section {
     padding-top: 40px;
-    /* padding-bottom: 48px; */
     margin-left: 140px;
     margin-right: 140px;
 }
@@ -346,14 +332,12 @@ li {
     justify-content: center;
     font-size: 50px;
     text-align: center;
-
 }
 
 .information-area {
     display: flex;
     align-items: center;
-    margin-top: 40px;
-   
+    margin-top: 40px; 
 }
 
 .information-image {
@@ -370,8 +354,7 @@ li {
     z-index: 4;
     top: 10px;
     width: 40%;
-    right: 75px;
-    
+    right: 75px;  
 }
 
 .information-image #dog {
@@ -386,16 +369,14 @@ li {
     left: 35px;
     bottom: 545px;   
     width: 19%
-    
- 
 }
+
 .information-image #collar {
     z-index: 3;
     transform: scaleX(-1);
     left:25px;
     bottom: 280px;
     width: 28%;
-
 }
 
 .information-text {
@@ -474,7 +455,6 @@ li {
     color: rgba(255, 255, 255, 0.8);
 }
 
-
 .cards-section-two-card-area-botton  {
     display: block;
     width: 180px;
@@ -524,15 +504,17 @@ li {
     justify-content: space-between;
     margin-left: 110px;
     margin-right: 110px;
- 
 }
+
 .section-adorable-adoptables-container-img {
     position: relative;
     top: 70px;
 }
+
 #section-adorable-adoptables-container-title {
     width: 100%;
 }
+
 #section-adorable-adoptables-container-title h2{
     justify-content: center;
     font-size: 45px;
@@ -564,21 +546,24 @@ li {
 }
 .section-adorable-adoptables-container-botton  {
     display: flex;
-    width: 180px;
-    height: 35px;
+    width: 200px;
+    height: 56px;
     cursor: pointer;
     border-radius: 32px;
     padding: 10px;
     margin-top: 30px;
     justify-content: center;
+    font-size: 18px;
+    border:2px solid #F1D06E;
 }
 
-#section-adorable-adoptables-container-botton {
+#section-adorable-adoptables-container-botton-id {
     display: flex;
     justify-content: center;
     gap: 20px;
     position: relative;
     bottom: 45px;    
+    
 }
 
 .section-adorable-adoptables-container-botton p {
@@ -589,7 +574,7 @@ li {
     width: 179px;
     height: 34px;
     color: white;
-    border: 1px solid white;
+    border: 2px solid white;
     border-radius: 32px;
 }
 
@@ -653,21 +638,17 @@ li {
 
 #subscribe-section-information-button {
     display: block;
-    width: 150px;
-    height: 32px;
+    width: 200px;
+    height: 59px;
     cursor: pointer;
     border-radius: 32px;
-    /* margin-top: 80px; */
     border: 2px white solid;
     padding: 12px;
     background-color: #ffffff;
-}
-#subscribe-section-information-button p {
     font-size: 20px;
     font-family: "Inter";
     font-weight: 500;
     line-height: 32px;
-    letter-spacing: 0px;
     text-align: center;
     color: #1E1F27;
     font-weight: 700;
