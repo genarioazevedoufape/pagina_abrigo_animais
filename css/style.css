@@ -875,9 +875,10 @@ nav a {
 
 
 #modal-button-adopt {
-    width: 400px;
-    height: 50px;
+    width: 440px;
+    height: 70px;
     background-color: #04C27F;
+    border: 2px solid  #04C27F;
     color: #F5F5F5;
     display: flex;
     justify-content: center;
@@ -891,9 +892,10 @@ nav a {
 
 
 #modal-button-cancel {
-    width: 400px;
-    height: 50px;
+    width: 440px;
+    height: 70px;
     background-color: #37383F;
+    border: 2px solid #37383F;
     color: #F5F5F5;
     display: flex;
     justify-content: center;
@@ -978,8 +980,10 @@ label span {
 }
 
 /* donate-modal */
-
-#donate-modal {
+#open-modal {
+    display: none;
+}
+#donate-modal-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -998,7 +1002,7 @@ label span {
 
 #modal-button-donate {
     width: 330px;
-    height: 60px;
+    height: 70px;
     background-color: #FF3D9A;
     color: #F5F5F5;
     display: flex;
@@ -1009,6 +1013,7 @@ label span {
     gap: 8px;
     border-radius: 60px;
     font-size: 30px;
+    border: 2px solid #FF3D9A;
 }
 
 #modal-button-cancel-donate {
@@ -1031,15 +1036,13 @@ label span {
     height: auto;
 }
 
-#donate-modal-content-title {
-    line-height: 65px;
-    margin-bottom: 30px;
-}
-#donate-modal-content-title h1 {
+.donate-modal-content h1 {
     width: 400px;
     font-size: 56px;
     text-align: center;
     color: #1E1F27;
+    line-height: 65px;
+    margin-bottom: 30px;
 }
 .method-input-container {
     width: 105%;
@@ -1099,4 +1102,12 @@ label span {
 
 .checkbox-label input:checked + .custom-checkbox {
     background-color: #FF3D9A;
+}
+
+
+/* Open-Donate-Modal */
+
+#open-donate-modal {
+    /* display: none; */
+
 }
