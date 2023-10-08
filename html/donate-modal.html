@@ -12,62 +12,56 @@
 
     <meta name="charset" content="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forever Homes Shelter</title>
+    <title>Donate</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
     
-    <div id="donate-modal">
-    <div class="donate-modal-content">
-        <div id="donate-modal-content-title">
+    <div id="open-donate-modal">
+        <div class="donate-modal-content">
             <h1>Choose your Donate </h1>
-        </div>
-            <div>
-            <form action="" id="">
-                <label for="email">EMAIL*</label>
-                <input type="email" placeholder="youremail@here|" id="email" name="email">
+                <form action="" id="">
+                    <label for="email">EMAIL*</label>
+                    <input type="email" placeholder="youremail@here|" id="email" name="email">
 
-                <label for="name">HOW MUCH CAN YOU HELP?*</label>
-                <input type="text" placeholder="R$ 95,00" id="help"  name="help" required>
+                    <label for="name">HOW MUCH CAN YOU HELP?*</label>
+                    <input type="text" placeholder="R$ 95,00" id="help"  name="help" required>
 
-                <label for="method-input-container">PAYMENT METHOD*</label>
-                <div class="method-input-container">
-                    <label for="pix" class="checkbox-label">
-                        <input type="checkbox" id="pix" name="payment_method" value="pix" class="checkbox-circle" required>
-                        <span class="custom-checkbox"></span> Pix
-                    </label>
-                
-                    <label for="credit" class="checkbox-label" id="credit-label">
-                        <input type="checkbox" id="credit" name="payment_method" value="credit_card" class="checkbox-circle" required>
-                        <span class="custom-checkbox"></span> Credit Card
-                    </label>
-                
-                    <label for="paypal" class="checkbox-label">
-                        <input type="checkbox" id="paypal" name="payment_method" value="paypal" class="checkbox-circle" required>
-                        <span class="custom-checkbox"> </span>Paypal
-                    </label>
-                </div>          
-            </form>
-            <div class="donate-modal-container-footer">
-                <div id="modal-button-donate">
-                    <img src="/assets/Icon_Coracao.png" alt="">
-                    <p>I wanna Help!</p>
-                </div>
+                    <label for="method-input-container">PAYMENT METHOD*</label>
+                    <div class="method-input-container">
+                        <label for="pix" class="checkbox-label">
+                            <input type="checkbox" id="pix" name="payment_method" value="pix" class="checkbox-circle" required>
+                            <span class="custom-checkbox"></span> Pix
+                        </label>
+                    
+                        <label for="credit" class="checkbox-label" id="credit-label">
+                            <input type="checkbox" id="credit" name="payment_method" value="credit_card" class="checkbox-circle" required>
+                            <span class="custom-checkbox"></span> Credit Card
+                        </label>
+                    
+                        <label for="paypal" class="checkbox-label">
+                            <input type="checkbox" id="paypal" name="payment_method" value="paypal" class="checkbox-circle" required>
+                            <span class="custom-checkbox"> </span>Paypal
+                        </label>
+                    </div>          
+                </form>
+                <div class="donate-modal-container-footer">
+                    <button id="modal-button-donate">
+                        <img src="/assets/Icon_Coracao.png" alt="">
+                        <p>I wanna Help!</p>
+                    </button>
 
-                <div id="modal-button-cancel-donate">
-                    <img src="/assets/icons/Vector (9).png" alt="">
-                    <p>Cancel</p>
-                </div>
-            </div>  
-      </div>
+                    <button id="modal-button-cancel-donate" onclick="modalClose('vis-modal')">
+                        <img src="/assets/icons/Vector (9).png" alt="">
+                        <p>Cancel</p>
+                    </button>
+                </div>  
+            </div>
     </div>
     <script >
             const checkboxes = document.querySelectorAll('input[name="payment_method"]');
-
-            // Adiciona um ouvinte de evento para cada checkbox
             checkboxes.forEach(checkbox => {
                 checkbox.addEventListener('change', () => {
-                    // Desmarca todas as outras checkboxes quando uma é marcada
                     checkboxes.forEach(otherCheckbox => {
                         if (otherCheckbox !== checkbox) {
                             otherCheckbox.checked = false;
@@ -77,6 +71,5 @@
             });
 
     </script>
-    <script src="/js/script.js"></script>
 </body>
 </html>
