@@ -195,8 +195,8 @@ li {
     flex-direction: column;
     justify-content: center;
     margin-top: 40px;
-   
 }
+
 
 .carousel-section .text-section .date {
     display: flex;
@@ -246,15 +246,21 @@ li {
     width: 85%;
 }
 
-button {
-    margin-top: 10px;
-    border-radius: 50%;
+.carousel-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 140px;
+    margin-right: 140px;
 }
 
-.carousel-animals #left, #right {
+.carousel-buttons button {
+    border: none;
+    background: none;
     cursor: pointer;
+    position: relative;
+    top: 200px;
 }
-
 /* section 3 */
 .cards-section {
     width: 100%;
@@ -1046,7 +1052,7 @@ label span {
 
 #donate-modal-content-title {
     line-height: 65px;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 #donate-modal-content-title h1 {
     width: 400px;
@@ -1058,6 +1064,7 @@ label span {
     width: 105%;
     display: flex;
     gap:8px;   
+    align-items: center;
 }
 .method-input-container label {
     color: #37383F ;
@@ -1066,7 +1073,14 @@ label span {
     height: 30px;
     padding: 16px;
     border-radius: 8px;
+    
 }
+
+#credit-label {
+    width: 180px;
+    height: 50px;
+}
+
 #help::placeholder {
     text-align: right;
     margin-right: 10px;
