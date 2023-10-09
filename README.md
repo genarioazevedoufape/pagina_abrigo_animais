@@ -1,6 +1,6 @@
 # Forever Homes Shelter - Front-end Development Project
 
-![Forever Homes Shelter Logo](logo.png)
+![Forever Homes Shelter Logo](/assets/logo.png)
 
 Welcome to the Forever Homes Shelter Front-end Development Project! This project was developed during the Front-end Development internship at <a href="https://compass.uol/pt/home/?utm_source=google-ads&utm_medium=ppc&utm_campaign=compasso-uol-institucional&utm_term=compass+uol">COMPASSUOL</a>., focusing on React and AWS Cloud technologies.
 
