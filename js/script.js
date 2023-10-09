@@ -59,8 +59,9 @@ checkboxes.forEach(checkbox => {
 });
 
 
-const openModalButtonDonate = document.querySelector(".openModalButtonDonate");
-const closeModalButtonDonate = document.querySelector(".closeModalButtonDonate");
+// Selecione todos os elementos com a classe .openModalButtonDonate
+const openModalButtonsDonate = document.querySelectorAll(".openModalButtonDonate");
+const closeModalButtonDonate = document.querySelectorAll(".closeModalButtonDonate");
 const modalDonate = document.querySelector("#donate-modal-content");
 const fadeDonate = document.querySelector("#fade-donate-modal");
 
@@ -68,21 +69,33 @@ const toggleModalDonate = () => {
     [modalDonate, fadeDonate].forEach((el) => el.classList.toggle("hide"));
 };
 
-openModalButtonDonate.addEventListener("click", () => toggleModalDonate());
-closeModalButtonDonate.addEventListener("click", () => toggleModalDonate());
+openModalButtonsDonate.forEach((button) => {
+    button.addEventListener("click", () => toggleModalDonate());
+});
+
+closeModalButtonDonate.forEach((button) => {
+    button.addEventListener("click", () => toggleModalDonate());
+});
+
+
 
 // Modal Button Adopt
-const openModalButtonAdopt = document.querySelector(".openModalButtonAdopt");
-const closeModalButtonAdopt = document.querySelector(".closeModalButtonAdopt");
+const openModalButtonAdopt = document.querySelectorAll(".openModalButtonAdopt");
+const closeModalButtonAdopt = document.querySelectorAll("closeModalButtonAdopt");
 const modalAdopt = document.querySelector("#adopt-modal-content");
 const fadeAdopt = document.querySelector("#fade-adopt-modal");
 
 const toggleModalAdopt = () => {
-    [modalAdopt, fadeAdopt].forEach((el) => el.classList.toggle("hide"));
+    [modalDonate, fadeDonate].forEach((el) => el.classList.toggle("hide"));
 };
 
-openModalButtonAdopt.addEventListener("click", () => toggleModalAdopt());
-closeModalButtonAdopt.addEventListener("click", () => toggleModalAdopt());
+openModalButtonAdopt.forEach((button) => {
+    button.addEventListener("click", () => toggleModalDonate());
+});
+
+closeModalButtonAdopt.forEach((button) => {
+    button.addEventListener("click", () => toggleModalDonate());
+});
 
 
 // View Adoptables
