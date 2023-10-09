@@ -31,19 +31,25 @@
                 <img src="/assets/Icon_tel.png" alt="">
                 <p>631-249-7325</p>
             </div>
-            <button class="button_donate">
+            <button class="button_donate button-donate-style">
                 <img src="/assets/Icon_Coracao.png" alt="">
                 Donate
             </button>
         </div>
         <div id="success-page">
-        <div class="button-back">
+        <button class="button-back">
             <img src="/assets/icons/Vector (9).png" alt="">
             <p>Back</p>
-        </div>
+        </button>
         <h1>Success!</h1>
         <p>Free your creativity and create a beautiful success page to thank your user for subscribing/donating to our project.</p>
     </div>
     </div>
+    <script>
+        const redirectToPageBack = document.querySelector(".button-back");
+        redirectToPageBack.addEventListener("click", function() {
+        window.location.href = "/html/index.html";
+        });
+    </script>
 </body>
 </html>

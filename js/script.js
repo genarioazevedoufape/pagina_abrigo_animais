@@ -41,6 +41,8 @@ prevButton.addEventListener("click", () => {
 
 //Modal
 
+// Donate-Modal
+
 const checkboxes = document.querySelectorAll('input[name="payment_method"]');
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
@@ -53,16 +55,69 @@ checkboxes.forEach(checkbox => {
 });
 
 
-const openModalButton = document.querySelector("#openModalButton");
-const closeModalButton = document.querySelector("#closeModalButton");
-const modal = document.querySelector("#donate-modal-content");
-const fade = document.querySelector("#fade-donate-modal");
+const openModalButtonDonate = document.querySelector("#openModalButtonDonate");
+const closeModalButtonDonate = document.querySelector("#closeModalButtonDonate");
+const modalDonate = document.querySelector("#donate-modal-content");
+const fadeDonate = document.querySelector("#fade-donate-modal");
 
-const toggleModal = () => {
-    [modal, fade].forEach((el) => el.classList.toggle("hide"));
+const toggleModalDonate = () => {
+    [modalDonate, fadeDonate].forEach((el) => el.classList.toggle("hide"));
 };
 
-[openModalButton, closeModalButton, fade].forEach((el) => {
-  el.addEventListener("click", () => toggleModal());
+openModalButtonDonate.addEventListener("click", () => toggleModalDonate());
+closeModalButtonDonate.addEventListener("click", () => toggleModalDonate());
+
+// Para os botões de adoção
+const openModalButtonAdopt = document.querySelector(".openModalButtonAdopt");
+const closeModalButtonAdopt = document.querySelector("#closeModalButtonAdopt");
+const modalAdopt = document.querySelector("#adopt-modal-content");
+const fadeAdopt = document.querySelector("#fade-adopt-modal");
+
+const toggleModalAdopt = () => {
+    [modalAdopt, fadeAdopt].forEach((el) => el.classList.toggle("hide"));
+};
+
+openModalButtonAdopt.addEventListener("click", () => toggleModalAdopt());
+closeModalButtonAdopt.addEventListener("click", () => toggleModalAdopt());
+
+
+// View Adoptables
+
+const redirectToPageAdotables = document.getElementById("green");
+
+redirectToPageAdotables.addEventListener("click", function() {
+    window.location.href = "/html/adotables-page.html";
 });
 
+//View Adoptables
+
+const redirectToPageAdotablesButton = document.querySelector(".section-adorable-adoptables-container-botton");
+
+redirectToPageAdotablesButton.addEventListener("click", function() {
+    window.location.href = "/html/adotables-page.html";
+});
+
+
+//subscribe
+
+const redirectToPageSubscribes = document.getElementById("subscribe-section-information-button");
+
+redirectToPageSubscribes.addEventListener("click", function() {
+    window.location.href = "/html/success-page.html";
+});
+
+// I wanna help
+
+const redirectToPageWanna = document.getElementById("modal-button-donate");
+
+redirectToPageWanna.addEventListener("click", function() {
+    window.location.href = "/html/success-page.html";
+});
+
+// I wanna Adopt
+
+const redirectToPageAdopt = document.getElementById("modal-button-adopt");
+
+redirectToPageAdopt.addEventListener("click", function() {
+    window.location.href = "/html/success-page.html";
+});

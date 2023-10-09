@@ -36,7 +36,7 @@
 }
 
 /* Button-Donate */
-.button-donate {
+.button-donate-style{
     width: 205px;
     height: 75px;
     cursor: pointer;
@@ -51,7 +51,7 @@
     transition: 0.4s;
 }
 
-.button-donate:hover {
+.button-donate-style:hover {
     opacity: 0.7;
 }
 .button_donate img {
@@ -320,8 +320,8 @@ nav a {
 
 .info-button-adopt {
     display: block;
-    width: 180px;
-    height: 35px;
+    width: 230px;
+    height: 55px;
     cursor: pointer;
     background-color:#1E1F27;
     color: white;
@@ -329,17 +329,12 @@ nav a {
     padding: 10px;
     margin-top: 20px;
     transition: 0.4s;
+    font-size: 19px;
+    text-align: center;  
 }
 
 .info-button-adopt:hover {
     opacity: 0.7;
-}
-
-
-.info-button-adopt p {
-    font-size: 19px;
-    text-align: center;
-    vertical-align: middle;    
 }
 
 .information h2 {
@@ -786,27 +781,30 @@ nav a {
 /* success page */
 
 .button-back {
-    width: 125px;
-    height: 45px;
+    width: 180px;
+    height: 75px;
     cursor: pointer;
     background-color:  #37383F;
     color: white;
     border-radius: 32px;
     padding: 10px 25px;   
     margin-bottom: 50px;
+    border: #37383F;
+    font-size: 25px;
+    text-align: center;
+    line-height: 45px;
+    cursor: pointer;
+
+    
+}
+.button-back:hover {
+    opacity: 0.5;
 }
 
 .button-back img {
     height: 42px;
     float: left;
   }
-  
-.button-back p {
-    font-size: 25px;
-    text-align: center;
-    line-height: 45px;
-    /* vertical-align: middle; */
-}
 
 #success-page {
     display: flex;
@@ -938,7 +936,7 @@ nav a {
 }
 
 
-#modal-button-cancel {
+.modal-button-cancel {
     width: 370px;
     height: 60px;
     background-color: #37383F;
@@ -952,27 +950,9 @@ nav a {
     font-size: 20px;
 
 }
-#modal-button-cancel #modal-button-adopt  img {
+.modal-button-cancel #modal-button-adopt  img {
     max-width: 100%;
     height: auto;
-}
-
-#adopt-modal-content {
-    width: 370px;
-    background-color: white;
-    margin: 0 auto;
-    border-radius: 32px;
-    padding: 20px 30px 20px 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    z-index: 15;
-    max-width:95% ;
 }
 
 #adopt-modal-content h1 {
@@ -1077,7 +1057,7 @@ label span {
     opacity: 0.7;
 }
 
-#closeModalButton {
+.close-modal-button {
     width: 177px;
     height: 64px;
     background-color: #37383F;
@@ -1094,10 +1074,10 @@ label span {
     cursor: pointer;
 }
 
-#closeModalButton:hover {
+.close-modal-button:hover {
     opacity: 0.7;
 }
-#modal-button-cancel #modal-button-donate  img {
+.modal-button-cancel #modal-button-donate  img {
     max-width: 100%;
     height: auto;
 }
@@ -1191,7 +1171,6 @@ label span {
 }
 
 #fade-donate-modal {
-    /* display: none; */
     background-color: rgba(0, 0, 0, 0.2);
     position: fixed;
     margin: 0 auto;
@@ -1212,5 +1191,49 @@ label span {
 }
 
 #donate-modal-content.hide {
+    right: 0;
+}
+
+/* Open-Adopt-Modal */
+
+#adopt-modal-content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    width: 370px;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 32px;
+    padding:20px 30px 20px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 15;
+    max-width:95% ;
+}
+
+#fade-adopt-modal {
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+}
+
+#adopt-modal-content.hide, #fade-adopt-modal {
+    opacity: 0;
+    pointer-events: none;
+}
+
+#adopt-modal-content, #fade-adopt-modal {
+    transition: 0.8s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#adopt-modal-content.hide {
     right: 0;
 }

@@ -11,7 +11,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Success</title>
+    <title>Adotables</title>
     <link rel="stylesheet" href="/css/style.css">
 </head>
 <body>
@@ -31,7 +31,7 @@
                 <img src="/assets/Icon_tel.png" alt="">
                 <p>631-249-7325</p>
             </div>
-            <button class="button_donate">
+            <button class="button-donate-style" id="openModalButtonDonate">
                 <img src="/assets/Icon_Coracao.png" alt="">
                 Donate
             </button>
@@ -40,10 +40,10 @@
         <div id="adotables-pets-container">
             <div id="adotables-pets">
                 <div id="button-back-container">
-                <div class="button-back">
+                <button class="button-back" id="back">
                     <img src="/assets/icons/Vector (9).png" alt="">
                     <p>Back</p>
-                </div>
+                </button>
                 </div>
                 <h2>Back Our Adoptable Pets</h2>
             </div>
@@ -178,5 +178,12 @@
             <h2>​We are not just a rescue, <span>we are a refuge</span></h2>
         </div>
     </footer>
+    <script>
+        const redirectToPageBack = document.getElementById("back");
+        redirectToPageBack.addEventListener("click", function() {
+            window.location.href = "/html/index.html";
+        });
+        
+    </script>
 </body>
 </html>
