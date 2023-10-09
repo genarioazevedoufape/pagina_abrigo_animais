@@ -9,8 +9,9 @@
 /* Section-home */
 
 #container-home {
-    max-width: 100%;
+    height: 100vh;
     background-color:#F5F5F5 ;
+    padding-bottom: 56px;
 }
 
 #container-home-menu {
@@ -228,11 +229,11 @@ nav a {
 
 .carousel-animals {
     display: flex;
-    transition: transform 0.5s; /* Adiciona animação de transição para o deslizamento */
+    transition: transform 0.5s; 
 }
 
 .carousel-slide {
-    flex: 0 0 25%; /* 4 imagens visíveis */
+    flex: 0 0 25%; 
     text-align: center;
     position: relative;
 }
@@ -780,6 +781,12 @@ nav a {
 
 /* success page */
 
+#container-home-sucess {
+    width: 100%;
+    height: 100vh;
+    background-color:#F5F5F5 ;
+}
+
 .button-back {
     width: 180px;
     height: 75px;
@@ -840,7 +847,7 @@ nav a {
  }
 
 #adotables-pets-container {
-    margin-top: 30px;
+
     background-color: #1E1F27;
 }
 
@@ -848,7 +855,6 @@ nav a {
  .adotables-pets-container-group {
     margin-left: 140px;
     margin-right: 140px;
-    margin-bottom: 70px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -1070,7 +1076,7 @@ label span {
     gap: 8px;
     border-radius: 32px;
     font-size: 20px;
-    transition: 0.4s;
+    transform: 0.4s;
     cursor: pointer;
 }
 

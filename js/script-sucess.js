@@ -1,3 +1,8 @@
+const redirectToPageBack = document.querySelector(".button-back");
+redirectToPageBack.addEventListener("click", function() {
+window.location.href = "/html/index.html";
+});
+
 //CheckBox
 
 const checkboxes = document.querySelectorAll('input[name="payment_method"]');
@@ -36,9 +41,4 @@ const redirectToPageWanna = document.getElementById("modal-button-donate");
 
 redirectToPageWanna.addEventListener("click", function() {
     window.location.href = "/html/success-page.html";
-});
-
-const redirectToPageBack = document.querySelector(".button-back");
-redirectToPageBack.addEventListener("click", function() {
-window.location.href = "/html/index.html";
 });

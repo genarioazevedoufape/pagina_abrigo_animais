@@ -80,22 +80,20 @@ closeModalButtonDonate.forEach((button) => {
 
 
 // Modal Button Adopt
-const openModalButtonAdopt = document.querySelectorAll(".openModalButtonAdopt");
-const closeModalButtonAdopt = document.querySelectorAll("closeModalButtonAdopt");
+const openModalButtonsAdopt = document.querySelectorAll(".openModalButtonAdopt");
+const closeModalButtonAdopt = document.querySelector(".closeModalButtonAdopt");
 const modalAdopt = document.querySelector("#adopt-modal-content");
 const fadeAdopt = document.querySelector("#fade-adopt-modal");
 
 const toggleModalAdopt = () => {
-    [modalDonate, fadeDonate].forEach((el) => el.classList.toggle("hide"));
+    [modalAdopt, fadeAdopt].forEach((el) => el.classList.toggle("hide"));
 };
 
-openModalButtonAdopt.forEach((button) => {
-    button.addEventListener("click", () => toggleModalDonate());
+openModalButtonsAdopt.forEach((button) => {
+    button.addEventListener("click", () => toggleModalAdopt());
 });
 
-closeModalButtonAdopt.forEach((button) => {
-    button.addEventListener("click", () => toggleModalDonate());
-});
+closeModalButtonAdopt.addEventListener("click", () => toggleModalAdopt());
 
 
 // View Adoptables
