@@ -33,7 +33,7 @@
                 <img src="/assets/Icon_tel.png" alt="">
                 <p>631-249-7325</p>
             </div>
-            <button class="button_donate" onclick="modalOpen('open-donate-modal')">
+            <button class="button-donate">
                 <img src="/assets/Icon_Coracao.png" alt="">
                 Donate
             </button>
@@ -47,7 +47,7 @@
                 <h3>Your Gift Helps Save Lives</h3>
                 
                 <div class="group-bottons">
-                    <button class="button_donate" id="openModalButton">
+                    <button class="button-donate" id="openModalButton">
                         <img src="/assets/Icon_Coracao.png" alt="">
                         Donate
                     </button>
@@ -65,6 +65,47 @@
             </div >    
         </section>       
     </div>
+
+        <div id="fade-donate-modal" class="hide"></div>
+        <div id="donate-modal-content" class="hide">
+            <h1>Choose your Donate </h1>
+                <form action="" id="">
+                    <label for="email">EMAIL*</label>
+                    <input type="email" placeholder="youremail@here|" id="email" name="email">
+
+                    <label for="name">HOW MUCH CAN YOU HELP?*</label>
+                    <input type="text" placeholder="R$ 95,00" id="help"  name="help" required>
+
+                    <label for="method-input-container">PAYMENT METHOD*</label>
+                    <div class="method-input-container">
+                        <label for="pix" class="checkbox-label">
+                            <input type="checkbox" id="pix" name="payment_method" value="pix" class="checkbox-circle" required>
+                            <span class="custom-checkbox"></span> Pix
+                        </label>
+                    
+                        <label for="credit" class="checkbox-label" id="credit-label">
+                            <input type="checkbox" id="credit" name="payment_method" value="credit_card" class="checkbox-circle" required>
+                            <span class="custom-checkbox"></span> Credit Card
+                        </label>
+                    
+                        <label for="paypal" class="checkbox-label">
+                            <input type="checkbox" id="paypal" name="payment_method" value="paypal" class="checkbox-circle" required>
+                            <span class="custom-checkbox"> </span>Paypal
+                        </label>
+                    </div>          
+                </form>
+                <div class="donate-modal-container-footer">
+                    <button id="modal-button-donate">
+                        <img src="/assets/Icon_Coracao.png" alt="">
+                        I wanna Help!
+                    </button>
+
+                    <button id="closeModalButton">
+                        <img src="/assets/icons/Vector (9).png" alt="">
+                        Cancel
+                    </button>
+                </div>  
+            </div>
         <section class ="carousel-section">
             <div class="text-section">
                 <h2>With your help, we accomplished these goals</h2>
@@ -197,7 +238,7 @@
                 <div class="cards-section-two-card-area" >
                     <h4>Volunteer</h4>
                     <p>We are always in need of passionate and friendly volunteers.</p>
-                    <div class=" cards-section-two-card-area-botton" id="yellow">
+                    <div class="cards-section-two-card-area-botton" id="button-yellow">
                         <p>Get Involved</p>
                     </div>
                 </div>
