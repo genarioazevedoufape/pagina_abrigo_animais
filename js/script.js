@@ -1,3 +1,5 @@
+//Carousel 
+
 const carousel = document.querySelector(".carousel-animals");
 const prevButton = document.getElementById("left");
 const nextButton = document.getElementById("right");
@@ -43,6 +45,8 @@ prevButton.addEventListener("click", () => {
 
 // Donate-Modal
 
+//CheckBox
+
 const checkboxes = document.querySelectorAll('input[name="payment_method"]');
 checkboxes.forEach(checkbox => {
     checkbox.addEventListener('change', () => {
@@ -55,8 +59,8 @@ checkboxes.forEach(checkbox => {
 });
 
 
-const openModalButtonDonate = document.querySelector("#openModalButtonDonate");
-const closeModalButtonDonate = document.querySelector("#closeModalButtonDonate");
+const openModalButtonDonate = document.querySelector(".openModalButtonDonate");
+const closeModalButtonDonate = document.querySelector(".closeModalButtonDonate");
 const modalDonate = document.querySelector("#donate-modal-content");
 const fadeDonate = document.querySelector("#fade-donate-modal");
 
@@ -67,9 +71,9 @@ const toggleModalDonate = () => {
 openModalButtonDonate.addEventListener("click", () => toggleModalDonate());
 closeModalButtonDonate.addEventListener("click", () => toggleModalDonate());
 
-// Para os botões de adoção
+// Modal Button Adopt
 const openModalButtonAdopt = document.querySelector(".openModalButtonAdopt");
-const closeModalButtonAdopt = document.querySelector("#closeModalButtonAdopt");
+const closeModalButtonAdopt = document.querySelector(".closeModalButtonAdopt");
 const modalAdopt = document.querySelector("#adopt-modal-content");
 const fadeAdopt = document.querySelector("#fade-adopt-modal");
 
@@ -89,7 +93,6 @@ redirectToPageAdotables.addEventListener("click", function() {
     window.location.href = "/html/adotables-page.html";
 });
 
-//View Adoptables
 
 const redirectToPageAdotablesButton = document.querySelector(".section-adorable-adoptables-container-botton");
 

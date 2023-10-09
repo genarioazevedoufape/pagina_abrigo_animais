@@ -43,7 +43,7 @@
     background-color:  #FF3D9A;
     color: white;
     border-radius: 32px;
-    padding: 10px 25px;   
+    padding: 8px 25px;   
     font-size: 22px;
     text-align: center;
     line-height: 45px;
@@ -54,14 +54,14 @@
 .button-donate-style:hover {
     opacity: 0.7;
 }
-.button_donate img {
+.button-donate-style img {
     width: 42px;
     height: 42px;
-    float: left;
+    float: left;    
 }
 
 /* Button adopt */
-.button_adopt {
+.button-adopt {
     display: block;
     width: 280px;
     height: 75px;
@@ -77,11 +77,11 @@
     cursor: pointer;
 }
 
-.button_adopt:hover {
+.button-adopt:hover {
     opacity: 0.8;
     background-color: #cfcfcf;
 }
-.button_adopt img {
+.button-adopt img {
     width: 42px;
     height: 42px;
     float: left;
