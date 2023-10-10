@@ -18,7 +18,6 @@ checkboxes.forEach(checkbox => {
     });
 });
 
-
 // Selecione todos os elementos com a classe .openModalButtonDonate
 const openModalButtonsDonate = document.querySelectorAll(".openModalButtonDonate");
 const closeModalButtonDonate = document.querySelectorAll(".closeModalButtonDonate");

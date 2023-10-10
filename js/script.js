@@ -6,7 +6,6 @@ const nextButton = document.getElementById("right");
 const slideWidth = carousel.offsetWidth / 4; 
 let position = 0;
 
-
 const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
 const clonedSlides = slides.slice(0, 4).map(slide => slide.cloneNode(true));
 clonedSlides.forEach(clonedSlide => {
@@ -77,8 +76,6 @@ closeModalButtonDonate.forEach((button) => {
     button.addEventListener("click", () => toggleModalDonate());
 });
 
-
-
 // Modal Button Adopt
 const openModalButtonsAdopt = document.querySelectorAll(".openModalButtonAdopt");
 const closeModalButtonAdopt = document.querySelector(".closeModalButtonAdopt");
@@ -95,7 +92,6 @@ openModalButtonsAdopt.forEach((button) => {
 
 closeModalButtonAdopt.addEventListener("click", () => toggleModalAdopt());
 
-
 // View Adoptables
 
 const redirectToPageAdotables = document.getElementById("green");
@@ -104,13 +100,11 @@ redirectToPageAdotables.addEventListener("click", function() {
     window.location.href = "/html/adotables-page.html";
 });
 
-
 const redirectToPageAdotablesButton = document.querySelector(".section-adorable-adoptables-container-botton");
 
 redirectToPageAdotablesButton.addEventListener("click", function() {
     window.location.href = "/html/adotables-page.html";
 });
-
 
 //subscribe
 
