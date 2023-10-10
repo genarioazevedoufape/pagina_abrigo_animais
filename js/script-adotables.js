@@ -38,6 +38,8 @@ redirectToPageWanna.addEventListener("click", function() {
     window.location.href = "/html/success-page.html";
 });
 
+//button back
+
 const redirectToPageBack = document.querySelector(".button-back");
 redirectToPageBack.addEventListener("click", function() {
 window.location.href = "/html/index.html";
