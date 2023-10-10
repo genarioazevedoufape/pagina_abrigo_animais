@@ -1,3 +1,5 @@
+//button back
+
 const redirectToPageBack = document.querySelector(".button-back");
 redirectToPageBack.addEventListener("click", function() {
 window.location.href = "/html/index.html";
