@@ -121,8 +121,8 @@ nav a {
     padding-top: 20px;
     padding-bottom: 20px;
     border-top: 2px solid #1E1F27 ;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 9%;
+    margin-right: 9%;
 
 }
 
@@ -218,8 +218,8 @@ nav a {
 .carousel-section .text-section h2 {
     font-size: 45px;
     text-align: center;
-    margin-left: 440px;
-    margin-right: 440px;
+    margin-left: 15%;
+    margin-right: 15%;
 }
 .carousel-section .text-section .date  h3 {
     color: #F8DB46 ;
@@ -431,8 +431,8 @@ nav a {
     padding-bottom: 80px;
 }
 .cards-section-two-title {
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 9%;
+    margin-right: 9%;
     display: flex;
     justify-content: center;
 }
@@ -456,8 +456,8 @@ nav a {
 .cards-section-two-card {
     display: flex;
     justify-content: space-between;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 9%;
+    margin-right: 9%;
     margin-top: 50px;
 }
 .cards-section-two-card-area {
@@ -641,8 +641,8 @@ nav a {
 #subscribe-section-container{
     padding-top: 60px;
     padding-bottom: 60px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 9%;
+    margin-right: 9%;
     color: white;
 }
 #subscribe-section-header {
@@ -717,8 +717,8 @@ nav a {
 }
 
 #footer-section-container {
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 9%;
+    margin-right: 9%;
     padding-top: 70px;
     display: grid;
     grid-template-columns: repeat(4, 1fr); 
@@ -778,8 +778,8 @@ nav a {
 
 #footer-section-contact-phrase {
     margin-top: 60px;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 9%;
+    margin-right: 9%;
     margin-bottom: 60px;
     padding-top: 80px;
     border-top: #1E1F27 solid 2px;
@@ -828,8 +828,8 @@ nav a {
 #success-page {
     display: flex;
     flex-direction: column;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 9%;
+    margin-right: 9%;
     margin-top: 70px;
 }
 
@@ -865,11 +865,12 @@ nav a {
 
 
  .adotables-pets-container-group {
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 12%;
+    margin-right: 12%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 4%;
 
   
 }
